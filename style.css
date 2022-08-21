@@ -1,0 +1,298 @@
+* {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+/* Start header section for football */
+
+header {
+    background: black;
+    color: white;
+    margin: 20px 100px;
+    padding: 0px 50px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.banner-img {
+    padding-right: 150px;
+}
+
+.banner-img img {
+    padding-top: 50px;
+    width: 400px;
+    height: 89%;
+}
+
+
+.banner-text {
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding-right: 200px; */
+    padding-top: 100px;
+    padding-right: 10px;
+}
+
+.banner-text h1 {
+
+    font-size: 3.5em;
+}
+
+.banner-text p {
+    padding: 20px 0px;
+}
+
+
+
+.live {
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Star upcomming match in here.. */
+
+.upcomming {
+    display: flex;
+    /* padding-bottom: 50px; */
+    margin-left: 99px;
+}
+
+.match {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+
+}
+
+.match button {
+    font-weight: bold;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+
+.btn-1 {
+    padding: 15px;
+}
+
+.btn-2 {
+    padding: 15px 37px
+}
+
+.btn-3 {
+    padding: 15px 53px;
+    background-color: red;
+    color: white;
+
+}
+
+.run {
+    margin: 0 7px 15px 7px;
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 12px;
+    height: 300px;
+    width: 280px;
+}
+
+.run img {
+    width: 100%;
+}
+
+h3 {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.run span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: bold;
+    padding-left: 15px;
+}
+
+.run button {
+    margin-left: 15px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.small-icon {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.small-icon img {
+    padding-left: 15px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.match-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+
+}
+
+
+/* End upcomming match in here.. */
+
+/* start footer section in here.. */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+/* End footer section for football */
+
+
+
+/* Start in here for responsive */
+
+@media screen and (max-width: 688px) {
+    .footer-link {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        background: blueviolet;
+        color: white;
+        margin: 20px 30px;
+        padding: 0px 50px;
+        border-radius: 20px;
+    }
+
+    .banner-text {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .banner-text h1 {
+
+        font-size: 3em;
+    }
+
+    .banner-img img {
+        padding-top: 80px;
+        width: 350px;
+    }
+
+    .banner-img {
+        padding-right: 10px;
+    }
+
+    .match {
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        align-items: center;
+
+    }
+
+
+
+    .match-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upcomming {
+        flex-direction: column;
+        margin-right: 100px;
+    }
+}
+
+
+
+
+
+
+/* meiduam device star in hre .. */
+
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .footer-link {
+        flex-wrap: wrap;
+    }
+
+    header {
+        flex-direction: row;
+        background: blue;
+        color: white;
+        margin: 20px 30px;
+        padding: 30px 50px;
+        border-radius: 20px;
+    }
+
+    .banner-text {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 35px;
+    }
+
+    .banner-text h1 {
+
+        font-size: 3em;
+    }
+
+    .banner-img img {
+        padding-top: 80px;
+        width: 300px;
+        height: 88%;
+    }
+
+    .banner-img {
+        padding-right: 10px;
+    }
+
+    .match {
+        flex-direction: row;
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        height: auto;
+    }
+
+
+    .match-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .upcomming {
+        flex-wrap: wrap;
+    }
+}
+
+/* miduam device end in here.. */
